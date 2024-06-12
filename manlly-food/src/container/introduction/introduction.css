@@ -1,0 +1,39 @@
+.intro-box {
+  padding: 100px 0;
+}
+
+.intro-box .container {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.intro-box:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.intro-box .container h1 {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: var(--text-color);
+}
+
+.intro-box .container img {
+  width: 165px;
+  height: 165px;
+  object-fit: cover;
+}
+
+.intro-box .container p {
+  text-align: justify;
+  line-height: 30px;
+}
+
+@media (max-width: 429px) {
+  .intro-box .container {
+    width: 90%;
+  }
+}

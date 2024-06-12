@@ -1,0 +1,114 @@
+.wrap {
+  display: flex;
+  width: 80%;
+  margin: 100px auto;
+  height: 80vh;
+  border: 1px solid black;
+}
+
+.order-left {
+  flex: 2;
+  border-right: 1px solid gray;
+}
+
+.order-left ul li {
+  margin: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.order-left ul li  a{
+  color: gray;
+}
+
+.order-left ul li:hover {
+  background-color: var(--text-color);
+}
+
+.order-left ul li:hover a {
+  color: white;
+}
+
+.order-right {
+  flex: 10;
+  padding: 10px;
+}
+
+.list-order {
+  width: 90%;
+  margin: 30px auto;
+  height: 85%;
+}
+
+.list-top,
+.list-bottom {
+  display: flex;
+}
+
+.list-top .col {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.col-small {
+  flex: 0.5;
+  text-align: left;
+}
+.order-right .col {
+  flex:  2;
+  text-align: center;
+}
+
+.list-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 90%;
+  overflow-y:auto ;
+}
+
+.list-bottom .item {
+  display: flex;
+  padding: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.list-bottom .item:hover {
+  background-color: var(--text-color);
+}
+
+.item .col .status {
+  /* color: gold; */
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.item .col .status:after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transform: translate(50%, 10%);
+  border: 3px solid currentColor;
+  opacity: 0.4;
+}
+
+.pending {
+  color: goldenrod;
+}
+
+.success {
+  color: green;
+}
+
+.cancel {
+  color: red;
+}
